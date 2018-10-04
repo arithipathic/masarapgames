@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000899671782758}
   m_Layer: 12
-  m_Name: coinSpawn2
+  m_Name: randomSpawn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4893616469859158}
   m_Layer: 12
-  m_Name: coinSpawn1
+  m_Name: randomSpawn1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4712182757496416}
   m_Layer: 12
-  m_Name: coinSpawn3
+  m_Name: randomSpawn3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,6 @@ GameObject:
   - component: {fileID: 212810942879576242}
   - component: {fileID: 61013677773378936}
   - component: {fileID: 50237549264200232}
-  - component: {fileID: 114095112958079948}
   - component: {fileID: 114991816161778396}
   m_Layer: 12
   m_Name: Ground
@@ -176,18 +175,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &114095112958079948
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1919942416596442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d221c7cb9e7031c4ba1329cfe9ab1e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallDelay: 1
 --- !u!114 &114991816161778396
 MonoBehaviour:
   m_ObjectHideFlags: 1

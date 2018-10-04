@@ -5,12 +5,12 @@ using UnityEngine;
 public class SimplePlatformController : MonoBehaviour {
 
     [HideInInspector] public bool facingRight = true;
-    [HideInInspector] public bool jump = true;
+    [HideInInspector] public bool jump = false;
     [HideInInspector] public bool candoublejump = true;
 
-    public float moveForce = 365f;
-    public float maxSpeed = 5f;
-    public float jumpForce = 1000f;
+    public float moveForce = 128f;
+    public float maxSpeed = 3f;
+    public float jumpForce = 600f;
     public Transform groundCheck;
 
     private bool grounded = false;
@@ -43,10 +43,9 @@ public class SimplePlatformController : MonoBehaviour {
         if (Mathf.Abs(rb2d.velocity.x) > maxSpeed)
             rb2d.velocity = new Vector2(Mathf.Sign(rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
 
-        if (h > 0 && !facingRight)
+        if ((h > 0 && !facingRight) || (h < 0 && facingRight)) {
             Flip();
-        else if (h < 0 && facingRight)
-            Flip();
+        }
 
 
         if (jump && (grounded || candoublejump)) {
